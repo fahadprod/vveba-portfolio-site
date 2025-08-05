@@ -410,6 +410,13 @@ html {
   position: relative;
 }
 
+.skill-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+        }
+
 .skill {
   display: flex;
   justify-content: space-between;
@@ -423,6 +430,7 @@ html {
 
 .skill span:nth-child(2) {
   color: #29a587;
+  margin-left: 30px;
 }
 
 .skills-card p {
@@ -432,116 +440,113 @@ html {
   margin-bottom: 4rem;
 }
 
-.skills-card-progress {
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: #1d222a;
-  border: 0.2rem solid #bbb;
-  border-radius: 50%;
-  position: absolute;
-  bottom: -1.25rem;
-}
+ .add-skill-btn {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          background: #29a587;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-bottom: 20px;
+          margin-top: 15px;
+        }
 
-.skills-card-progress::before {
-  content: "";
-  height: 0.2rem;
-  background-color: #29a587;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
+.skill-actions {
+          display: flex;
+          gap: 10px;
+        }
+        .icon-btn {
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: #666;
+        }
+        .icon-btn:hover {
+          color: #fff;
+        }
 
-.skills-card-progress::after {
-  content: "";
-  height: 0.2rem;
+.skill-modal {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          padding: 30px;
+          border-radius: 10px;
+          max-width: 500px;
+          width: 90%;
+          outline: none;
+        }
+        .skill-modal-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 1000;
+        }
+        .skill-modal h2 {
+          margin-bottom: 20px;
+          color: #29a587;
+        }
+        .form-group {
+          margin-bottom: 20px;
+        }
+        .form-group label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: 600;
+        }
+        .form-group input,
+        .form-group textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          background-color: #fff;
+          color: #000;
+        }
+        .form-group textarea {
+          min-height: 100px;
+        }
+        .modal-actions {
+          display: flex;
+          justify-content: flex-end;
+          gap: 10px;
+        }
+        .modal-actions button {
+          padding: 8px 16px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .modal-actions button:first-child {
+          background: #ddd;
+        }
+        .modal-actions button:last-child {
+          background: #29a587;
+          color: white;
+        }
+
+
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
   background-color: #777;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  border-radius: 0.25rem;
 }
 
-.skills-card:nth-child(1) .skills-card-progress {
-  right: 10%;
-}
-
-.skills-card:nth-child(1) .skills-card-progress::before {
-  width: 33rem;
-  right: 2.5rem;
-}
-
-.skills-card:nth-child(1) .skills-card-progress::after {
-  width: 4rem;
-  right: -4.3rem;
-}
-
-.skills-card:nth-child(2) .skills-card-progress {
-  right: 15%;
-}
-
-.skills-card:nth-child(2) .skills-card-progress::before {
-  width: 31.5rem;
-  right: 2.5rem;
-}
-
-.skills-card:nth-child(2) .skills-card-progress::after {
-  width: 5.8rem;
-  right: -6.1rem;
-}
-
-.skills-card:nth-child(3) .skills-card-progress {
-  right: 20%;
-}
-
-.skills-card:nth-child(3) .skills-card-progress::before {
-  width: 29.5rem;
-  right: 2.5rem;
-}
-
-.skills-card:nth-child(3) .skills-card-progress::after {
-  width: 7.9rem;
-  right: -8.2rem;
-}
-
-.skills-card:nth-child(4) .skills-card-progress {
-  right: 30%;
-}
-
-.skills-card:nth-child(4) .skills-card-progress::before {
-  width: 25.5rem;
-  right: 2.5rem;
-}
-
-.skills-card:nth-child(4) .skills-card-progress::after {
-  width: 12rem;
-  right: -12.2rem;
-}
-
-.skills-card:nth-child(5) .skills-card-progress {
-  right: 20%;
-}
-
-.skills-card:nth-child(5) .skills-card-progress::before {
-  width: 29.5rem;
-  right: 2.5rem;
-}
-
-.skills-card:nth-child(5) .skills-card-progress::after {
-  width: 7.9rem;
-  right: -8.2rem;
-}
-
-.skills-card:nth-child(6) .skills-card-progress {
-  right: 30%;
-}
-
-.skills-card:nth-child(6) .skills-card-progress::before {
-  width: 25.5rem;
-  right: 2.5rem;
-}
-
-.skills-card:nth-child(6) .skills-card-progress::after {
-  width: 12rem;
-  right: -12.2rem;
+.progress-bar {
+  height: 100%;
+  background-color: #29a587;
+  border-radius: 0.25rem;
 }
 
 .skills .section-border {

@@ -1,0 +1,40 @@
+{
+  "skills": [
+    {
+      "id": "f698",
+      "name": "HTML",
+      "percentage": "95%",
+      "description": "Lorem ipsum here is my tdfgfdgdgdfgest html skill update"
+    },
+    {
+      "id": "63e2",
+      "name": "CSS",
+      "percentage": "30%",
+      "description": "lorem ipsume css skills"
+    },
+    {
+      "id": "f6ae",
+      "name": "JavaScript",
+      "percentage": "90%",
+      "description": "lorem ipsum here is the new skill"
+    },
+    {
+      "id": "6aaa",
+      "name": "ReactJs",
+      "percentage": "85%",
+      "description": "lorem ipsume new skill added"
+    },
+    {
+      "id": "03f2",
+      "name": "Nextjs",
+      "percentage": "90%",
+      "description": "lorem ipsum new skill"
+    },
+    {
+      "id": "03fe",
+      "name": "Node Js",
+      "percentage": "67%",
+      "description": "lorem ipsume new skill added"
+    }
+  ]
+}
