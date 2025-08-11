@@ -13,28 +13,28 @@
       "description": "lorem ipsume css skills"
     },
     {
-      "id": "f6ae",
-      "name": "JavaScript",
-      "percentage": "90%",
-      "description": "lorem ipsum here is the new skill"
+      "id": "c441",
+      "name": "SCSS",
+      "percentage": "50%",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi at cum rerum dicta harum, quam esse modi placeat deserunt illum!\n\n"
     },
     {
-      "id": "6aaa",
-      "name": "ReactJs",
+      "id": "9818",
+      "name": "JAVASCRIPT",
       "percentage": "85%",
-      "description": "lorem ipsume new skill added"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi at cum rerum dicta harum, quam esse modi placeat deserunt illum!\n\n"
     },
     {
-      "id": "03f2",
-      "name": "Nextjs",
+      "id": "f3a2",
+      "name": "NEST.JS",
+      "percentage": "80%",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi at cum rerum dicta harum, quam esse modi placeat deserunt illum!\n\n"
+    },
+    {
+      "id": "9888",
+      "name": "REACT.JS",
       "percentage": "90%",
-      "description": "lorem ipsum new skill"
-    },
-    {
-      "id": "03fe",
-      "name": "Node Js",
-      "percentage": "67%",
-      "description": "lorem ipsume new skill added"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi at cum rerum dicta harum, quam esse modi placeat deserunt illum!\n\n"
     }
   ]
 }
