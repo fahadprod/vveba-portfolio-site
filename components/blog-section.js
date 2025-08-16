@@ -56,13 +56,6 @@ export default function BlogSection() {
                 }}
               />
             </div>
-            {/* <div className="techs">
-              {post.tag_list.slice(0, 3).map((tech, index) => (
-                <span key={index}>
-                  {tech}{index < Math.min(2, post.tag_list.length - 1) ? ',' : ''}
-                </span>
-              ))}
-            </div> */}
             <h3 className="project-name">{post.title}</h3>
             <p className="project-desc">
               {post.description.substring(0, 100)}...
