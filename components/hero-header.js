@@ -1,4 +1,20 @@
+'use client'
+
 export default function HeroHeader() {
+
+  const handleDownload = () => {
+  // Path to your PDF file in the public folder
+  const fileUrl = '/files/Fake-Resume.pdf';
+  const fileName = 'Fake-CV.pdf';
+  
+  // Create anchor tag
+  const link = document.createElement('a');
+  link.href = fileUrl;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
   return (
     <section className="landing">
       <h1 className="section-bg-heading">Web Developer</h1>
@@ -22,7 +38,7 @@ export default function HeroHeader() {
             <i className="fa-brands fa-twitter"></i>
           </div>
           <div className="cv">
-            <button type="button" className="btn cv-btn">Download cv</button>
+            <button type="button" className="btn cv-btn" onClick={handleDownload}>Download cv</button>
             <span>My skills</span>
           </div>
         </div>

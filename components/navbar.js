@@ -1,6 +1,9 @@
+import ThemeToggle from "./theme-toggle";
+
 export default function Navbar() {
   return (
     <>
+    <ThemeToggle />
       <div className="menu-icon">
         <div className="line line-1"></div>
         <div className="line line-2"></div>

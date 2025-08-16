@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from "react";
+import { FiCopy, FiCheck } from 'react-icons/fi';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -12,6 +13,20 @@ export default function Contact() {
   const [errors, setErrors] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  const [isCopied, setIsCopied] = useState(false);
+  const email = 'johnsmith@webdev.com';
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(email)
+      .then(() => {
+        setIsCopied(true);
+        setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
+      })
+      .catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+  };
 
   const url = 'https://script.google.com/macros/s/AKfycbxJuTnczwQAS10VyjiObzQYtDhZiUg58QUXP6mxFpv8kwjtKoZYwCPoTSxFdz5_TMc/exec';
 
@@ -134,8 +149,17 @@ export default function Contact() {
             <i className="fa-regular fa-envelope"></i>
             <div className="contact-info">
               <span>Email</span>
-              <span>johnsmith@webdev.com</span>
+              <span>{email}</span>
             </div>
+
+            <button 
+              onClick={copyToClipboard}
+              className="copy-btn"
+              aria-label="Copy email to clipboard"
+              title="Copy to clipboard"
+            >
+              {isCopied ? <i class="fa-solid fa-check-double"></i> : <i class="fa-solid fa-copy"></i>}
+            </button>
           </div>
           <div className="phone">
             <i className="fa-solid fa-phone"></i>

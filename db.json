@@ -7,12 +7,6 @@
       "description": "Lorem ipsum here is my tdfgfdgdgdfgest html skill update"
     },
     {
-      "id": "63e2",
-      "name": "CSS",
-      "percentage": "30%",
-      "description": "lorem ipsume css skills"
-    },
-    {
       "id": "f6ae",
       "name": "JavaScript",
       "percentage": "90%",
@@ -21,8 +15,8 @@
     {
       "id": "6aaa",
       "name": "ReactJs",
-      "percentage": "85%",
-      "description": "lorem ipsume new skill added"
+      "percentage": "100%",
+      "description": "I'm experienced in reactjs"
     },
     {
       "id": "03f2",
